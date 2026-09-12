@@ -1,0 +1,40 @@
+public class SportCar implements Builder{
+    private String name;
+    private String color;
+    private int speed;
+    private int fuelCapacity;
+
+
+    @Override
+    public Builder setName(String name) {
+        this.name=name;
+        return this;
+    }
+
+    @Override
+    public Builder setColor(String color) {
+        this.color=color;
+        return this;
+    }
+
+    @Override
+    public Builder setSpeed(int speed) {
+        this.speed=speed;
+        return this;
+    }
+
+    @Override
+    public Builder setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity=fuelCapacity;
+        return this;
+
+    }
+
+    @Override
+    public Car build() {
+        if(this.name==null||this.name.isEmpty()){
+            throw new IllegalStateException("Car must have name");
+        }
+        return new Car(name,color,speed,fuelCapacity);
+    }
+}
