@@ -4,7 +4,7 @@
 The product is "Car". Car is a complex object with multiple attributes such as name, color, speed, and fuel capacity.
 
 ## How to Build Each Representation
-The project uses an interface "CarBuilder" and provides two concrete implementations to build **SportCar** and **CityCar**
+The project uses an interface "Builder" and provides two concrete implementations to build **SportCar** and **CityCar**
 
 ## How to run it
 Use the IDE(IntelliJ idea) to run:
