@@ -8,6 +8,6 @@ The project uses an interface "CarBuilder" and provides two concrete implementat
 
 ## How to run it
 Use the IDE(IntelliJ idea) to run:
-1 Clone repository from github
-2 Go to this path Project/src/Main
-3 Click green button "Run" or Shift+F10
+1. Clone repository from github
+2. Go to this path Project/src/Main
+3. Click green button "Run" or Shift+F10
