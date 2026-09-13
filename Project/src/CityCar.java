@@ -33,6 +33,9 @@ public class CityCar implements Builder {
         if(this.name == null || this.name.isEmpty()){
             throw new IllegalStateException("Car must have name");
         }
+        if(this.speed > 150){
+            throw new IllegalStateException("Car must be slower than 150");
+        }
         return new Car(name,color,speed,fuelCapacity);
     }
 }

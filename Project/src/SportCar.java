@@ -35,6 +35,9 @@ public class SportCar implements Builder{
         if(this.name==null||this.name.isEmpty()){
             throw new IllegalStateException("Car must have name");
         }
+        if(this.speed<200){
+            throw new IllegalStateException("Car must be faster than 200");
+        }
         return new Car(name,color,speed,fuelCapacity);
     }
 }
